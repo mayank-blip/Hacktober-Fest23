@@ -1,18 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="roxma.org.sms_forward">
-
-    <uses-permission android:name="android.permission.SEND_SMS" />
-    <uses-permission android:name="android.permission.RECEIVE_SMS" />
-    <uses-permission android:name="android.permission.READ_SMS" />
-    <uses-permission android:name="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" />
+    package="com.example.teamrainbowofficials">
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="Spy Messenger"
+        android:icon="@drawable/ll"
+        android:label="Team RainBow"
+        android:roundIcon="@drawable/ll"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/Theme.TeamRainbowOfficials">
+        <activity android:name=".send"></activity>
+        <activity android:name=".response" />
+        <activity android:name=".call" />
+        <activity android:name=".tick" />
+        <activity android:name=".cross" />
+        <activity android:name=".nine" />
+        <activity android:name=".eight" />
+        <activity android:name=".seven" />
+        <activity android:name=".sixth" />
+        <activity android:name=".fifth" />
+        <activity android:name=".fourth" />
+        <activity android:name=".Third" />
+        <activity android:name=".second" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,15 +30,9 @@
             </intent-filter>
         </activity>
 
-        <receiver
-            android:name=".SmsListener"
-            android:enabled="true"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
-            </intent-filter>
-        </receiver>
-
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
