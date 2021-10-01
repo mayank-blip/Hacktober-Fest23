@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SMS-Forward.iml" filepath="$PROJECT_DIR$/SMS-Forward.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SMS-Forward2.iml" filepath="$PROJECT_DIR$/.idea/modules/SMS-Forward2.iml" group="SMS-Forward2" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/SMS-Forward2-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/SMS-Forward2-app.iml" group="SMS-Forward2/app" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+    </modules>
+  </component>
+</project>
