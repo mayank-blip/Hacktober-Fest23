@@ -1,40 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="roxma.org.sms_forward.MainActivity">
+    android:id="@+id/root_layout"
+    android:background="@drawable/gradient_animate"
+    tools:context=".MainActivity">
 
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="336dp"
+        android:layout_height="320dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.359"
+        app:srcCompat="@drawable/ll" />
 
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="507dp"
+        android:layout_height="380dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.845"
+        app:srcCompat="@drawable/hh" />
 
-        <EditText android:id="@+id/edit_phone_number"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="Forwarding to ..." />
-
-
-        <Button
-            android:id="@+id/btnSendSMS"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:text="TEST"
-            android:layout_centerInParent="true"
-            android:onClick="sendSMS">
-        </Button>
-
-    </LinearLayout>
-
-
-</RelativeLayout>
+    <Button
+        android:id="@+id/button"
+        android:layout_width="124dp"
+        android:layout_height="69dp"
+        android:background="#000000"
+        android:text="Continue"
+        android:textColor="#000000"
+        app:backgroundTint="#1D979691"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.978"
+        app:rippleColor="#000000"
+        app:strokeColor="#F30101" />
+</androidx.constraintlayout.widget.ConstraintLayout>
